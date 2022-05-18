@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position:relative;
+}
+
+title {
+    color: white;
+}
+
+body {
+    background-color: white;
+    position:relative;
+}
+
+.header {
+    position: relative;
+    padding: 15px;
+    margin-left:10px;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    background-color: white;
+    color: lightgray;
+}
+
+
+.header h1 {
+    position: relative;
+    display: inline-block;
+    font-size: 48px;
+    
+}
+
+.header div {
+    position: relative;
+    padding-top: 15px;
+    padding-inline: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.header div ul li { 
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+p {
+    display:block;
+    min-height: 16px;
+    letter-spacing: 0.2em;
+    line-height: 28px;
+    width:80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gradient-header {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: linear-gradient(to right, rgb(171, 227, 240), rgb(255, 231, 182));
+    contain: strict;
+} 
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+ .float-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.content {
+    width: 90%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* SECTIONS */
+.about-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: tan;
+    position:relative;
+}
+
+.work {
+    margin-bottom: 20px;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #93c6d7;
+    position:relative;
+}
+
+.work-overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 29%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.work-overlay2 {
+    position: absolute;
+    top: 50%;
+    right: 4.5%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.contact-me {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: #5a8897;
+    position: relative;
+}
+
+
+/* IMAGES */
+.about-me img {
+    max-height: 400px;
+}
+
+.work img {
+    margin: 50px;
+    max-height: 300px;
+    max-width: 100%;
+    opacity: 0.7;
+}
+
+.work img:hover {
+    opacity: 0.4;
+    max-height: 302px;
+}
+
+
+
+/* HEADINGS */
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-transform: lowercase;
+    letter-spacing: 0.07em;
+    
+}
+
+.work h2 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    text-transform: lowercase;
+    letter-spacing: 0.07em;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+/* contact icons */
+.fa {
+    padding: 30px;
+    font-size: 40px;
+    width: 40%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* each icon */
+  .fa-google {
+    background: #88c773c7;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #5dafcd;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #fab25f;
+    color: white;
+  }
+
+  /* icon hover */
+  a:hover {
+      color: tan;
+  }
+
+  a:active {
+      color:#93c6d7;
+  }
+
+  li:hover {
+    color: tan;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.3px;
+    width: fit-content;
+  }
+  
+  /* The user is actively pressing down on the element */
+  li:active {
+    color:#93c6d7;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.3px;
+    width: fit-content;
+  }
+  
+  /* The element is currently in focus, either by tabbing to or clicking on it */
+  li:focus {
+    outline: none;
+    border-color: #93c6d7;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+      * {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: stretch;
+        block-size:auto;
+      }
+
+    /* Change the header */
+    h1 {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        color:#93c6d7;
+    }
+    
+    /* Change the navbar */
+    li {
+        flex-direction: column;
+        padding-bottom: 5px;
+        position: relative;
+        width:100%;
+        background-color: white;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .gradient-header {
+        display:none;
+        
+    }
+
+    .about-me h2 {
+        width: 100%;
+        text-align:center;
+        /* padding-right: 20px; */
+    }
+
+    .about-me {
+        text-align:center;
+    }
+
+    .about-me img {
+        max-width: 50%;
+        
+    }
+
+    .work h2 {
+        width: 100%;
+        text-align: center;
+        /* padding-right: 20px; */
+    }
+    .work img {
+        display:block;
+        block-size: auto;
+        flex-direction:row;
+        align-items: stretch;
+        max-width: 50%;
+    }
+
+    .contact-me h2 {
+        width: 100%;
+        display: grid;
+        flex-direction: row;
+        text-align: center;
+        padding-right: 25px;
+    }
+
+    
+
+
+  }
+  
