@@ -81,6 +81,7 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
+    padding-top: 20px;
 }
 
  .float-center {
@@ -90,9 +91,8 @@ p {
 } 
 
 .content {
-    width: 90%;
-    display: inline-block;
-    margin-left: 20px;
+    width: 100%;
+    display: grid;
 }
 
 /* SECTIONS */
@@ -114,34 +114,11 @@ p {
     position:relative;
 }
 
-.work-overlay1 {
-    position: absolute;
-    top: 50%;
-    left: 29%;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-
-.work-overlay2 {
-    position: absolute;
-    top: 50%;
-    right: 4.5%;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-}
-
 .contact-me {
     margin-bottom: 20px;
     padding: 50px;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
+    align-items:baseline;
+    justify-content:baseline;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     color: #5a8897;
@@ -294,7 +271,7 @@ p {
     .about-me h2 {
         width: 100%;
         text-align:center;
-        /* padding-right: 20px; */
+        
     }
 
     .about-me {
@@ -309,8 +286,8 @@ p {
     .work h2 {
         width: 100%;
         text-align: center;
-        /* padding-right: 20px; */
     }
+
     .work img {
         display:block;
         block-size: auto;
