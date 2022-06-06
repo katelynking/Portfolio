@@ -6,6 +6,8 @@ An effective portfolio highlights your strongest work as well as the thought pro
 **Note:** If you don't have enough web applications to showcase at this point, use placeholder images and names. You can change them to real applications as you create them later in the course.
 
 
+**Link to deployed application:** 
+
 ## User Story
 
 ```
